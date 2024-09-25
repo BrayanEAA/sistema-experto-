@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Tarea</title>
+</head>
+<body>
+    <h1>Agregar Tarea a Kanban</h1>
+    <form method="POST">
+        <label for="nombre_tarea">Nombre de la Tarea:</label>
+        <input type="text" id="nombre_tarea" name="nombre_tarea" required>
+        
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado">
+            <option value="Por Hacer">Por Hacer</option>
+            <option value="En Proceso">En Proceso</option>
+            <option value="Completada">Completada</option>
+        </select>
+        
+        <label for="prioridad">Prioridad:</label>
+        <select id="prioridad" name="prioridad">
+            <option value="Alta">Alta</option>
+            <option value="Media">Media</option>
+            <option value="Baja">Baja</option>
+        </select>
+        
+        <button type="submit">Agregar Tarea</button>
+    </form>
+</body>
+</html>
